@@ -69,6 +69,8 @@ ul li:hover ul {
     position: absolute;
     background-color:rgb(216, 214, 214);
     padding: 10px;
+    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
+
 }
 .menu__cursos--submenu{
     display: none;
@@ -80,6 +82,8 @@ ul li:hover ul {
     display: none;
     background-color:rgb(216, 214, 214);
     padding: 10px;
+    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
+
 }
 #searchbox{
     width: 80px;
@@ -268,6 +272,10 @@ main p{
    .logo{
        width: 50px;
        padding-left: 10px;
+       animation-name: logo;
+       animation-duration:1.5s;
+       animation-timing-function:ease-out;
+
     }
 
 
@@ -289,7 +297,7 @@ main p{
     header h2{
         width: 350px;
         height: auto;
-        font-size: 40px;
+        font-size: 50px;
         margin-right: 150px;
         margin-top: 40px;
     }
@@ -325,6 +333,7 @@ main p{
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
     }
     .ubicacion{
         width: 300px;
@@ -350,13 +359,48 @@ main p{
         display: flex;
     }
 
-    
+    /* ----animaciones---*/
+    .navbar{
+        background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
+    }
+    .ubicacion__img:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+    }
+    .redes__img:hover{
+        transform: scale(1.5);
+        transition: all 1s;
+    }
+    .btn:hover{
+        background-color:dimgrey;
+        color: white;
+    }
+    @keyframes aparecer {
+        0%{
+            transform: translate(200px,0px);
+        }
+        100%{
+            transform: translate(0px,0px);
+        }
+    }
+    header h2{
+        animation-name: aparecer;
+        animation-duration: 3s;
+    }
 
-
-
-
-
-
-
-
+    @keyframes logo {
+        0%{
+            transform: rotate(10deg);
+            transform: translate(0px,-40px);
+        }
+        40%{
+            transform: rotate(15deg);
+        }
+        60%{
+            transform: rotate(-15deg);
+        }
+        100%{
+            transform:rotate(0deg);
+        }
+    }
 }
