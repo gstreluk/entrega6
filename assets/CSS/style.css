@@ -151,6 +151,8 @@ header h2{
     margin: 5px;
     border-radius: 5px;
     padding: 2px;
+    border-color: rgb(240, 245, 245);
+    border: solid 1px;
 }
 
 /* footer*/
@@ -372,7 +374,7 @@ main p{
         transition: all 1s;
     }
     .btn:hover{
-        background-color:dimgrey;
+        background-color:rgb(11, 38, 190);
         color: white;
     }
     @keyframes aparecer {
