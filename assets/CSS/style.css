@@ -82,6 +82,12 @@ aside button{
     border-radius: 5px;
 }
 
+.formulario{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
 /* ----footer---*/
 .pie{
     display: flex;

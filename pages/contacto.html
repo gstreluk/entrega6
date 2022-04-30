@@ -64,37 +64,49 @@
             </div>
         </div>
     </nav>       
-    <main class="contacto">
+    <main class="container-fluid contacto">
         <h2>CONTACTO</h2>
         <form action="">
             <fieldset class="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre">
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido">
-                <br>
-                <label for="telefono">Telefono:</label>
-                <input type="tel" name="telefono" id="">
-                <br>
-                <label for="mail">Mail:</label>
-                <input type="email" name="mail" id="">
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                <br>
-                <label for="horario_contacto">Horario de contacto:</label>
-                <select name="horario_contacto" id="">
-                    <option value="M">Mañana</option>
-                    <option value="T">Tarde</option>
-                    <option value="N">Noche</option>
-                </select>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationCustom02" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Email</label>
+                      <div class="input-group has-validation">
+                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom03" class="form-label">Teléfono</label>
+                      <input type="tel" class="form-control" id="validationCustom03" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Mensaje</label>
+                        <textarea name="mensaje" id="validationCustom04" cols="20" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <label for="horario_contacto">Horario de contacto:</label>
+                        <select name="horario_contacto" id="">
+                            <option value="M">Mañana</option>
+                            <option value="T">Tarde</option>
+                            <option value="N">Noche</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                  </form>
             </fieldset>
         </form>
-        <header class="encabezado"></header>
     </main>
     <footer class="pie">
         <div class="ubicacion">
