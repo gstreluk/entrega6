@@ -16,6 +16,9 @@ a{
 .logo{
     margin-left: 5px;
     margin-bottom: 10px;
+    animation-name:logo;
+    animation-duration:1.5s;
+    animation-timing-function:ease-out;
 }
 .nav-link{
     margin: 10px;
@@ -65,8 +68,18 @@ aside button{
 .introduccion {
     background-color:darkgrey;
     font-family:'Merriweather', serif;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
+}
+
+.curso_cat{
+    height: 200px;
+    background-color: rgb(187, 150, 150);
+    border: solid 1px;
+    text-align: center;
+    color: bisque;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 /* ----footer---*/
@@ -74,7 +87,6 @@ aside button{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 250px;
     flex-wrap: wrap;
     background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
 }
