@@ -2,110 +2,30 @@
     margin: 0;
     padding: 0;
 }
+
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.contenedor{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 140px    200px  auto auto 500px;
-    grid-template-areas: "nav    nav    nav "
-                         "header header header"
-                         "main   main   main "
-                         "aside  aside  aside"
-                         "footer footer footer";
-}
-
-/* NAVEGADOR*/
-.navbar {
-    grid-area: nav;
-    background-color: rgb(216, 214, 214);
-    width: 100%;
-    height: 130px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    position: relative;
-}
-.logo {
-    display: inline-block;
-    margin-bottom: 10px;
-
+.navbar{
+    height: 200px;
 }
 .nombre_compañia{
-    font-size: 20px;
-    padding: 5px;
-    height: 50px;
-    width: 115px;
+    margin-left: 50px;
+    font-size: 40px;
 }
-ul{
-    list-style: none;
-}
-li{
-    display: inline-block;
-}
-.menu{
-    display: flex  ;
-    flex-direction: row; 
-    justify-content: space-around;
-    width: 100%;
-    font-size: 15px;
-    padding-bottom:5px;
-}
-ul ul li{
-    display:block;
-}
-ul li:hover ul {
-    display:block;
- }
- ul ul{
-     position: absolute;
- }
-
-.menu__cursos{
-    display: none;
-    position: absolute;
-    background-color:rgb(216, 214, 214);
-    padding: 10px;
-    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
-
-}
-.menu__cursos--submenu{
-    display: none;
-    position: relative;
-    font-style: italic;
-    padding-left: 7px;
-}
-.menu__servicios{
-    display: none;
-    background-color:rgb(216, 214, 214);
-    padding: 10px;
-    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
-
-}
-#searchbox{
-    width: 80px;
-}
-
-.buscador{
-    width: 130px;
-    height: 20px;
-    padding: 3px;
-    margin-left: 170px;
-    border-radius: 5px;
-    border: solid 1px;
+.logo{
+    margin-left: 5px;
     margin-bottom: 10px;
 }
-
-/* HEADER*/
+.nav-item{
+    margin-left:50px;
+}
 .encabezado {
-    grid-area: header;
     background-image: url(../img/header4.jpg);
     background-size: cover;
-    width: 100%;
-    font-size: 13px;
+    font-size: 20px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -113,49 +33,11 @@ ul li:hover ul {
     color: white;
 }
 header h2{
-    width: 160px;
-    height: 80px;
+    width: 270px;
+    height: 100px;
+    margin-right: 30px;
 }
 
-/* main*/
-.introduccion {
-    grid-area: main;
-    background-color:rgb(230, 198, 198);
-    font-family:'Merriweather', serif;
-    font-size: 10px;
-    max-width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-/* aside*/
-.publicidad {
-    grid-area: aside;
-    background-image: url(../img/publicidad.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 200px;
-    font-size: 15px;
-    color: white;
-    background-position: 0px;
-    justify-content:flex-end;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-}
-.btn{
-    width: 60px;
-    font-size: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    padding: 2px;
-    border-color: rgb(240, 245, 245);
-    border: solid 1px;
-}
-
-/* footer*/
 .pie {
     grid-area: footer;
     background-color:rgb(216, 214, 214);
@@ -173,7 +55,6 @@ header h2{
 
 }
 .redes__img{
-    max-width: 40px;
     padding-top: 5px;
     
 }
@@ -185,9 +66,6 @@ header h2{
     align-items: center;
     text-align: center;
 }
-.ubicacion__img{
-    max-width: 50px;
-}
 .horario{
     display: flex;
     flex-direction: column;
@@ -197,170 +75,12 @@ header h2{
     padding: 10px;
 }
 .horario__img{
-    max-width: 40px;
     padding: 5px;
 }
 .pie__marca{
     margin: 30px;
     font-size: 13px;
 }
-
-/* page cursos*/
-.cursos{
-    grid-area: main; 
-    display: flex;
-
-}
-main h3{
-    font-size: 15px;
-    padding-bottom: 30px;
-}
-main p{
-    font-size: 12px;
-    text-align: center;
-
-}
-.curso_cat{
-    height: 200px;
-    background-color: rgb(187, 150, 150);
-    border: solid 1px;
-    text-align: center;
-    color: bisque;
-    padding: 3px;
-    border-radius: 5px;
-}
-
-/* page servicios*/
-.servicios{
-    grid-area: main;
-}
-
-
-/* page nosotros*/
-.nosotros{
-    grid-area: main;
-}
-
-/* page contacto*/
-.contacto{
-    grid-area:auto;
-}
-@media screen and (min-width: 1200px) {
-    .contenedor{
-    grid-template-rows: 140px    450px  auto auto 250px;
-    grid-template-areas: "nav    nav    nav "
-                         "header header header"
-                         "main   main   aside "
-                         "main  main  aside"
-                         "footer footer footer";
-
-    }
-     
-    .menu{
-       justify-content: flex-start;
-
-   }
-   ul li a{
-       width: 30px;
-       padding: 0px 50px 0px 50px;
-   }
-
-   .nombre_compañia{
-       font-size: 40px;
-       width: auto;
-       padding-left: 20px;
-
-   }
-   .logo{
-       width: 50px;
-       padding-left: 10px;
-       animation-name: logo;
-       animation-duration:1.5s;
-       animation-timing-function:ease-out;
-
-    }
-
-
-    #searchbox{
-        width: 150px;
-    }
-    
-    .buscador{
-        width: 200px;
-        height: 20px;
-        padding: 3px;
-        margin-left: 400px;
-        border-radius: 5px;
-        border: solid 1px;
-        margin-bottom: 10px;
-
-    }
-    
-    header h2{
-        width: 350px;
-        height: auto;
-        font-size: 50px;
-        margin-right: 150px;
-        margin-top: 40px;
-    }
-    .introduccion{
-        font-size: 20px;
-        max-width: 100%;
-        text-align: center;
-        padding: 10px;
-    
-         
-
-    }
-    .publicidad{
-        height: auto;
-        padding-bottom: 100px;
-        padding: 10px;
-        font-size: 30px;
-    }
-    .btn{
-        width: 60px;
-        font-size: 10px;
-        margin: 20px 5px 100px 5px;
-        border-radius: 5px;
-        padding: 2px;
-    }
-    aside p{
-        width: 230px;
-        margin-top: 20px;
-        font-size: 15px;
-    }
-
-    .pie{
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
-    }
-    .ubicacion{
-        width: 300px;
-    }
-
-    .horario{
-        width: 300px;
-    }
-    .redes{
-        width:300px;
-    }
-    .pie__marca{
-        margin: 10px;
-        font-size: 14px;
-        height: 20px;
-    }
-    main p{
-        font-size: 20px;
-    }
-
-    .cursos{
-        grid-area: main; 
-        display: flex;
-    }
-
     /* ----animaciones---*/
     .navbar{
         background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
@@ -405,4 +125,3 @@ main p{
             transform:rotate(0deg);
         }
     }
-}
