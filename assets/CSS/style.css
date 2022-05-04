@@ -1,191 +1,304 @@
-a{
-    text-decoration: none;
-    color: white;
+.navbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d6d6), to(#444141));
+  background-image: linear-gradient(#d8d6d6, #444141);
 }
 
-.navbar-brand{
-    font-size: 30px;
+.navbar .navbar-brand {
+  font-size: 30px;
 }
-.marca{
-    height: 70px;
 
+.navbar .marca {
+  height: 70px;
 }
-#navbarSupportedContent{
-    margin-top:100px;
+
+.navbar .marca .logo {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
-.logo{
-    margin-left: 5px;
-    margin-bottom: 10px;
-    animation-name:logo;
-    animation-duration:1.5s;
-    animation-timing-function:ease-out;
+
+.navbar #navbarSupportedContent {
+  margin-top: 100px;
 }
-.nav-link{
-    margin: 10px;
+
+.navbar .nav-link {
+  margin: 10px;
 }
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-transform: translate(0px, -40px);
+            transform: translate(0px, -40px);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-transform: translate(0px, -40px);
+            transform: translate(0px, -40px);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    -webkit-transform: translate(200px, 0px);
+            transform: translate(200px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    -webkit-transform: translate(200px, 0px);
+            transform: translate(200px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
 .encabezado {
-    background-image: url(../img/header4.jpg);
-    background-size: cover;
-    font-size: 20px;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: end;
-    color: white;
+  background-image: url(../img/header4.jpg);
+  background-size: cover;
+  font-size: 20px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  color: white;
 }
-header h2{
-    width: 270px;
-    height: 100px;
-    margin-right: 30px;
+
+.encabezado h2 {
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  width: 270px;
+  height: 100px;
+  margin-right: 30px;
 }
+
 .publicidad {
-    background-image: url(../img/publicidad2.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-    font-size: 15px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content:center;    
+  background-image: url(../img/publicidad2.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  font-size: 15px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-aside button{
-    margin-top: 20px;
+
+.publicidad button {
+  margin-top: 20px;
 }
-.btn{
-    border-radius: 5px;
-    border-color: white;
-    color: beige;
+
+.publicidad div {
+  width: 300px;
+  overflow: visible;
 }
-.info_publicidad{
-    width: 300px;
-    overflow:visible;
+
+.btn {
+  border-radius: 5px;
+  border-color: white;
+  color: beige;
 }
 
 .introduccion {
-    background-color:darkgrey;
-    font-family:'Merriweather', serif;
-    font-size: 20px;
-    text-align: center;
+  background-color: darkgrey;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  text-align: center;
 }
 
-.curso_cat{
-    height: 200px;
-    background-color: rgb(187, 150, 150);
-    border: solid 1px;
-    text-align: center;
-    color: bisque;
-    padding: 3px;
-    border-radius: 5px;
+.curso_cat {
+  height: 200px;
+  background-color: #bb9696;
+  border: solid 1px;
+  text-align: center;
+  color: bisque;
+  padding: 3px;
+  border-radius: 5px;
 }
 
-.formulario{
-    margin-bottom: 20px;
-    border: 1px solid black;
-    padding: 10px;
-    background-color:rgb(231, 227, 227);
+.btn:hover {
+  background-color: #0b26be;
+  color: white;
+}
+
+.formulario {
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #e7e3e3;
+}
+
+.formulario .boton {
+  -webkit-box-shadow: 5px 4px 15px -4px #000000;
+          box-shadow: 5px 4px 15px -4px #000000;
+  margin: 10px;
+}
+
+.formulario .boton:active {
+  -webkit-box-shadow: 5px 4px 7px -4px #000000;
+          box-shadow: 5px 4px 7px -4px #000000;
 }
 
 /* ----footer---*/
-.pie{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
+.pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d6d6), to(#444141));
+  background-image: linear-gradient(#d8d6d6, #444141);
 }
-.redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
 
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
 }
-.redes__img{
-    max-width: 40px;
-    padding-top: 5px;
-    
-}
-.ubicacion{
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.ubicacion__img{
-    max-width: 50px;
-}
-.horario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-}
-.horario__img{
-    max-width: 40px;
-    padding: 5px;
-}
-.pie__marca{
-    margin: 30px;
-    font-size: 13px;
-}
-    /* ----animaciones---*/
-    .navbar{
-        background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
-    }
-    .ubicacion__img:hover{
-    transform: scale(1.5);
-    transition: all 1s;
-    }
-    .redes__img:hover{
-        transform: scale(1.5);
-        transition: all 1s;
-    }
-    .btn:hover{
-        background-color:rgb(11, 38, 190);
-        color: white;
-    }
-    @keyframes aparecer {
-        0%{
-            transform: translate(200px,0px);
-        }
-        100%{
-            transform: translate(0px,0px);
-        }
-    }
-    header h2{
-        animation-name: aparecer;
-        animation-duration: 3s;
-    }
 
-    @keyframes logo {
-        0%{
-            transform: rotate(10deg);
-            transform: translate(0px,-40px);
-        }
-        40%{
-            transform: rotate(15deg);
-        }
-        60%{
-            transform: rotate(-15deg);
-        }
-        100%{
-            transform:rotate(0deg);
-        }
-    }
+.redes__img {
+  max-width: 40px;
+  padding-top: 5px;
+}
 
-    .boton {
-        box-shadow: 5px 4px 15px -4px #000000;
-    }
-    .boton:active{
-        box-shadow: 5px 4px 7px -4px #000000;
-    }
+.ubicacion {
+  margin: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.ubicacion__img {
+  max-width: 50px;
+}
+
+.horario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.horario__img {
+  max-width: 40px;
+  padding: 5px;
+}
+
+.pie__marca {
+  margin: 30px;
+  font-size: 13px;
+}
+
+.ubicacion__img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.redes__img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=style.css.map */

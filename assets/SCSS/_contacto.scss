@@ -1,0 +1,14 @@
+.formulario{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:rgb(231, 227, 227);
+    .boton {
+        box-shadow: 5px 4px 15px -4px #000000;
+        margin: 10px;
+    }
+    .boton:active{
+        box-shadow: 5px 4px 7px -4px #000000;
+    }
+}
+

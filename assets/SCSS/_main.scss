@@ -1,0 +1,51 @@
+.publicidad {
+    background-image: url(../img/publicidad2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content:center;   
+    button{
+        margin-top: 20px;
+
+    } 
+    div{
+        width: 300px;
+        overflow:visible;
+    }
+
+}
+
+.btn{
+    border-radius: 5px;
+    border-color: white;
+    color: beige;
+}
+
+.introduccion {
+    background-color:darkgrey;
+    font-family:'Merriweather', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.curso_cat{
+    height: 200px;
+    background-color: rgb(187, 150, 150);
+    border: solid 1px;
+    text-align: center;
+    color: bisque;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+    .btn:hover{
+        background-color:rgb(11, 38, 190);
+        color: white;
+    }
+
