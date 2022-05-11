@@ -9,7 +9,7 @@
     color: white;
     align-items: center;
     text-align: center;
-    justify-content:center;   
+    justify-content:center;  
     button{
         margin-top: 20px;
 
@@ -20,8 +20,11 @@
     }
 
 }
-
-
+.btn{
+    border-radius: map-get($boton , radio);
+    border-color:map-get($boton , borde-color );
+    color: map-get($boton, color);
+}
 .introduccion {
     background-color:darkgrey;
     font-family:'Merriweather', serif;
@@ -31,15 +34,18 @@
 
 .curso_cat{
     height: 200px;
-    background-color: rgb(187, 150, 150);
     border: solid 1px;
     text-align: center;
-    color: bisque;
-    padding: 3px;
     border-radius: 5px;
+    @include propiedadesPrincipales(#bb9696,rgb(97, 90, 90),3px,0);
+    .btn{
+        @extend.btn;
+        padding: map-get($boton, padding);
+        background-color:rgb(197, 146, 146);
+    }
 }
 
-    .btn:hover{
+.btn:hover{
         background-color:rgb(11, 38, 190);
         color: white;
     }

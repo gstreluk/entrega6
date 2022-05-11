@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image:linear-gradient(rgb(216, 214, 214), rgb(68, 65, 65)) ;
+    background-image:linear-gradient($gradient-primario, $gradient-secundario) ;
 }
 .redes{
     display: flex;

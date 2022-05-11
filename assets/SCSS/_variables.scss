@@ -1,5 +1,9 @@
-.btn{
-    border-radius: 5px;
-    border-color: white;
-    color: beige;
-}
+$gradient-primario:rgb(214, 216, 214);
+$gradient-secundario: rgb(68, 65, 65);
+$boton:(
+    radio: 5px,
+    borde-color:rgb(255, 255, 255),
+    color:beige,
+    padding:10px,
+    
+)
