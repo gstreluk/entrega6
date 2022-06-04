@@ -115,14 +115,14 @@
   color: white;
 }
 
-.encabezado h2 {
+.encabezado h1 {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   width: 270px;
   height: 100px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .publicidad {
@@ -168,15 +168,16 @@
   font-family: 'Merriweather', serif;
   font-size: 20px;
   text-align: center;
+  margin: 0%;
 }
 
 .curso_cat {
-  height: 200px;
+  height: 300px;
   border: solid 1px;
   text-align: center;
   border-radius: 5px;
   background-color: #bb9696;
-  color: #615a5a;
+  color: #f8f4f4;
   padding: 3px;
   margin: 0;
 }
@@ -189,6 +190,16 @@
 .btn:hover {
   background-color: #0b26be;
   color: white;
+}
+
+.servicios_cat {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.radial {
+  background-image: url(../img/36913531_426091411243175_1425360664695668736_n.jpg);
+  background-size: cover;
 }
 
 .formulario {
