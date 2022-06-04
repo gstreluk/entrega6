@@ -24,4 +24,16 @@
         margin-right: 40px;
         }
 }
+.slogan{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(53, 50, 50);
+    color: white;
+    padding: 10px;
+    .texto{
+        animation-name: aparecer;
+        animation-duration: 2s;
+        align-items: center;
+    }
+}
 

@@ -125,6 +125,24 @@
   margin-right: 40px;
 }
 
+.slogan {
+  width: 100%;
+  height: 150px;
+  background-color: #353232;
+  color: white;
+  padding: 10px;
+}
+
+.slogan .texto {
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .publicidad {
   background-image: url(../img/publicidad2.jpg);
   background-size: cover;
@@ -157,7 +175,7 @@
   overflow: visible;
 }
 
-.btn, .curso_cat .btn {
+.btn, .curso_cat .btn, .boton_info {
   border-radius: 5px;
   border-color: white;
   color: beige;
@@ -182,12 +200,12 @@
   margin: 0;
 }
 
-.curso_cat .btn {
+.curso_cat .btn, .curso_cat .boton_info {
   padding: 10px;
-  background-color: #c59292;
+  background-color: #dd6a0c;
 }
 
-.btn:hover {
+.btn:hover, .boton_info:hover {
   background-color: #0b26be;
   color: white;
 }
@@ -198,8 +216,42 @@
 }
 
 .radial {
-  background-image: url(../img/36913531_426091411243175_1425360664695668736_n.jpg);
+  background-image: url(../img/radial.jpg);
   background-size: cover;
+}
+
+.off {
+  background-image: url(../img/header4.jpg);
+  background-size: cover;
+}
+
+.artistica {
+  background-image: url(../img/artistica2.jpg);
+  background-size: cover;
+  background-position: 5px;
+}
+
+.oratoria {
+  background-image: url(../img/oratoria2.jpg);
+  background-size: cover;
+  background-position: 5px;
+}
+
+.form_cursos {
+  width: 400px;
+  background-color: black;
+  margin-top: 0px;
+}
+
+.boton_info {
+  padding: 10px;
+  background-color: #dd6a0c;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .formulario {

@@ -42,7 +42,7 @@
     .btn{
         @extend.btn;
         padding: map-get($boton, padding);
-        background-color:rgb(197, 146, 146);
+        background-color:rgb(221, 106, 12);
     }
 }
 
@@ -54,6 +54,34 @@
     flex-wrap:wrap;
 }
 .radial{
-    background-image:url(../img/36913531_426091411243175_1425360664695668736_n.jpg);
+    background-image:url(../img/radial.jpg);
     background-size: cover;
 }
+.off{
+    background-image: url(../img/header4.jpg);
+    background-size: cover;
+}
+.artistica{
+    background-image: url(../img/artistica2.jpg);
+    background-size: cover;
+    background-position: 5px;
+}
+.oratoria{
+    background-image: url(../img/oratoria2.jpg);
+    background-size: cover;
+    background-position: 5px;
+}
+.form_cursos{
+    width: 400px;
+    background-color: black;
+    margin-top: 0px;
+}
+.boton_info{
+        @extend.btn;
+        padding: map-get($boton, padding);
+        background-color:rgb(221, 106, 12);
+        justify-content: center;
+        align-items: center;
+    }
+
+

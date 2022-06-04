@@ -64,42 +64,66 @@
             </div>
         </div>
     </nav>        
-    <header class="encabezado">
-        <h1>ESCUELA DE LOCUCION Y PRODUCCIONES</h1>
-    </header>
-    <main class="row cursos">
-        <div id="carouselExampleControls" class="col-xs-12 carousel slide w-75" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active curso_cat radial">
-                    <h3>Locucion radial</h3>
-                    <p>Duracion: 6 semanas (Presencial)</p>
-                    <button class="btn">Ver más</button>
-                </div>
-                <div class="carousel-item curso_cat">
-                    <h3>Voz en off</h3>
-                    <p>Duracion: 4 semanas (Presencial)</p>
-                    <button class="btn">Ver más</button>
-                </div>
-                <div class="carousel-item curso_cat">
-                    <h3>Artistica</h3>
-                    <p>Duracion: 4 semanas (Online)</p>
-                    <button class="btn">Ver más</button>
-                </div>
-                <div class="carousel-item curso_cat">
-                    <h3>Oratoria</h3>
-                    <p>Duracion: 6 semanas (Presencial)</p>
-                    <button class="btn">Ver más</button>
-                </div>
-            </div> 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>   
+    <header class="slogan">
+        <div class="texto d-flex flex-column">
+            <h1>APRENDÉ DE LOS MEJORES PROFESIONALES!</h1>
+            <p>Estudia acerca del proceso de creación y emisión de la voz, y la manera de optimizar su calidad y rendimiento.</p>
         </div>
+    </header>
+    <main class="row d-flex">
+        <div class="cursos col-lg-8" >
+            <div id="carouselExampleControls" class="col-xs-12 carousel slide w-75" data-bs-ride="carouse">
+                <div class="carousel-inner">
+                    <div class="carousel-item active curso_cat radial">
+                        <h3>Locucion radial</h3>
+                        <p>Duracion: 6 semanas (Presencial)</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="carousel-item curso_cat off">
+                        <h3>Voz en off</h3>
+                        <p>Duracion: 4 semanas (Presencial)</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="carousel-item curso_cat artistica">
+                        <h3>Artistica</h3>
+                        <p>Duracion: 4 semanas (Online)</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="carousel-item curso_cat oratoria">
+                        <h3>Oratoria</h3>
+                        <p>Duracion: 6 semanas (Presencial)</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div> 
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>   
+            </div>
+        </div>
+        <div class="form_cursos d-flex col-lg-3">
+            <div class="row g-3">
+                <div>
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+                <div>
+                    <input type="tel" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
+                </div>
+                <div>
+                    <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                </div>
+                <div>
+                    <input class="boton_info" type="button" value="Solicitar info">
+                </div>
+            </div>        
+        </div>    
         
 </main>
 <footer class="pie">
